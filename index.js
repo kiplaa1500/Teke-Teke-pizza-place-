@@ -10,5 +10,14 @@ function Havepizza(name, size, crust, topping, total) {
 }
 
 $(document).ready(function () {
-    
+    $("button.proceed").click(function (event) {
+        let psize = $("#size option:selected").value();
+        let pcrust = $("#crust option:selected").value();
+        let ptopping = [];
+
+        $.each($("input[name='toppings']:checked"), function () {
+            ptopping.push($(this).val());
+        });
+
+    })
 })
