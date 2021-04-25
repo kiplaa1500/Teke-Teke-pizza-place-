@@ -18,6 +18,27 @@ $(document).ready(function () {
         $.each($("input[name='toppings']:checked"), function () {
             ptopping.push($(this).val());
         });
+        console.log(ptopping.join(", "));
+
+        switch (psize) {
+            case "0":
+                price = 0;
+                break;
+            case "small":
+                price = 1000;
+                console.log(price);
+                break;
+            case "medium":
+                price = 800;
+                console.log("The price is " + price);
+                break;
+            case "large":
+                price = 400;
+                console.log(price);
+
+            default:
+                console.log("error");
+        }
 
     })
 })
