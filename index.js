@@ -40,5 +40,25 @@ $(document).ready(function () {
                 console.log("error");
         }
 
+        switch (pcrust) {
+            case "0":
+                crust_price = 0;
+                break;
+            case "Gluten":
+                price = 200;
+                console.log(price);
+                break;
+            case "Stuffed":
+                price = 150;
+                console.log("The price is " + price);
+                break;
+            case "Cripsy":
+                price = 350;
+                console.log(price);
+
+            default:
+                console.log("error");
+        }
+
     })
 })
