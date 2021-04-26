@@ -187,6 +187,14 @@ $(document).ready(function () {
 
 
         });
+        $(document).ready(function () {
+            $("#works1-p").hide();
+            $("#work1").mouseover(function () {
+                $("#works1-p").show();
+            }).mouseout(function () {
+                $("#works1-p").hide();
+            });
+        });
         event.preventDefault();
     });
 });

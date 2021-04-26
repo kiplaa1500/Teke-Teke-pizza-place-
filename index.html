@@ -5,18 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Pizza place</title>
 </head>
 
 <body>
+
+
+
     <div class="container" id="make-order">
+        <h1 id="images">Teke Teke Pizza Place</h1>
+        <div id="pizza types">
+            <img src="./images/Chicken Tikka.jpg" width="30%" height="10%" alt="Chicken Tikka">
+            <img src="./images/PeriPeri Pizza.jpg" width="30%" height="10%" alt="PeriPeri Pizza">
+            <img src="./images/Raspberry.jpg" width="30%" height="10%" alt="Raspberry">
+        </div>
         <div class="order-overlay">
             <div class="controls-top text-center" id="Order-now">
-                <h2>Have Your Order Here.!</h2>
+
+                <h2>Have Your Pizza Order Here.!</h2>
             </div>
-            <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+            <h2>Order your pizza here and we will deliver and payment is on delivery</h2>
             <div class="row">
                 <div class="col-md-6">
                     <form action="">
@@ -120,14 +131,12 @@
                                 <input type="text" id="location" class="form-control mb-3"
                                     placeholder="Location for delivery">
                                 <button class="btn btn-orange" id="final-order">Place Order</button>
-                                <button onclick="window.print()">Print/Download your receipt here:</button>
+
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-
-
             <footer id="footer">
                 <div>
                     <img src="./images/social icons/behance.png" alt="">
