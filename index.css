@@ -13,12 +13,17 @@ header,
 body {
     margin: 0;
     padding: 0;
+    color: #ffff
 }
-
+#choosing{
+    color: black;
+}
 h5 {
     letter-spacing: 4px;
 }
-
+#size, #crust, #flovour{
+    color: black;
+}
 #overlay {
     height: 100%;
     width: 100%;
@@ -218,7 +223,9 @@ th {
     padding-left: 10%;
     font-size: 28px;
 }
-
+.btn{
+    color: black;
+}
 
 @media only screen and (max-width: 485px) {
     .flex-xs-column {
