@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="index.css">
     <title>Pizza place</title>
 </head>
 
 <body>
-    <div class="container-fluid order" id="make-order">
+    <div class="container" id="make-order">
         <div class="order-overlay">
             <div class="controls-top text-center" id="Order-now">
                 <h2>Order Here</h2>
             </div>
             <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-md-6">
                     <form action="">
                         <label for="select">Select Your Flavor</label>
+                        <br>
                         <select class="browser-default custom-select custom-select-md mb-3 name">
                             <!-- <option selected value="choose">Choose your flavor</option> -->
                             <option value="Chicken Tikka">Chicken Tikka</option>
@@ -30,21 +31,30 @@
                             <option value="Sunchoke Pizza">Sunchoke Pizza</option>
                             <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
                         </select>
+                        <br>
+                        <br>
+
                         <label for="select">Select Size</label>
+                        <br>
                         <select class="browser-default custom-select custom-select-md mb-3" id="size">
                             <option selected value="0">Select size here</option>
-                            <option value="large">Large -- sh. 1200</option>
-                            <option value="medium">Medium -- sh. 850</option>
-                            <option value="small">Small -- sh. 600</option>
+                            <option value="large">Large -- sh. 1000</option>
+                            <option value="medium">Medium -- sh. 800</option>
+                            <option value="small">Small -- sh. 500</option>
                         </select>
+                        <br>
+                        <br>
                         <label for="crust">Choose your favorite Crust!</label>
+                        <br>
                         <select class="browser-default custom-select custom-select-md mb-3" id="crust">
                             <option selected value="0">Select your preferred crust!</option>
                             <option value="Crispy">Crispy -- sh. 200</option>
                             <option value="Stuffed">Stuffed -- sh. 150</option>
-                            <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                            <option value="Gluten-free">Gluten-free-- sh. 100</option>
                         </select>
-                        <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                        <br>
+                        <br>
+                        <label for="Toppings">Select Your Toppings at sh. 100 each</label><br>
                         <div class="custom-control custom-checkbox custom-control-inline">
                             <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage"
                                 name="toppings">
@@ -66,7 +76,9 @@
                     </form>
 
                 </div>
-                <div class="col-sm-7">
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <div class="choise">
                         <h2>Your Order is:</h2>
                         <div id="your-orders">
@@ -107,6 +119,7 @@
                                 <input type="text" id="location" class="form-control mb-3"
                                     placeholder="Location for delivery">
                                 <button class="btn btn-orange" id="final-order">Place Order</button>
+                                <button onclick="window.print()">Print/Download your receipt here:</button>
                             </div>
                         </form>
                     </div>
