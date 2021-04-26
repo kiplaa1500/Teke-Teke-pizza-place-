@@ -6,6 +6,9 @@ header,
     scroll-behavior: smooth;
 
 }
+*{
+    font-size: 20px;
+}
 
 body {
     margin: 0;
@@ -52,17 +55,6 @@ nav .navbar {
     font-weight: 700;
 }
 
-.landing {
-    background-image: url("../images/slider2.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-bottom: 20px;
-    position: relative;
-    overflow-x: hidden;
-}
-
 .text a {
     font-size: 20px;
     font-weight: 700;
@@ -84,10 +76,11 @@ nav .navbar {
 }
 
 .controls-top h2 {
-    color: rgb(5, 172, 5);
+    color: rgb(5, 22, 172);
     padding-top: 40px;
     padding-bottom: 20px;
     font-weight: bolder;
+    font-size:50px
 }
 
 .col-md-4 {
@@ -161,31 +154,19 @@ nav .navbar {
     padding-top: 30px;
 }
 
-.order {
-    background-attachment: fixed;
-    background-image: url("./images/background");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-
 .order-overlay {
-    background-color: rgb(184, 123, 123);
+    background-color: rgb(192, 112, 112);
     padding-bottom: 20px;
     padding-left: 6%;
     margin-left: 2%;
     margin-right: 2%;
     
 }
-
-.choise {
-    display: none;
-    padding-left: 2%;
-    padding-right: 2%;
+footer {
+    text-align: center;
 }
+
+
 
 .deliver {
     display: none;
